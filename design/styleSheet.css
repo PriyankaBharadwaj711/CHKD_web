@@ -1,0 +1,681 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: -11px;
+    right: 0px;
+    font-size: 15px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+#mainContent {
+    transition: margin-left .5s;
+}
+
+.traumaTable th {
+    background-color: red;
+    text-align: center;
+}
+
+.traumaTable label {
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.customTable1 td {
+    padding: 10px;
+}
+
+.noBorder {
+    border: 0;
+}
+
+.mainDiv {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.margin20 {
+    margin: 5px;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.header1 {
+    background-color: #f4f5f7;
+}
+
+.header2 {
+    background-color: #f4dadb;
+}
+
+.header3 {
+    background-color: #fce9d8;
+}
+
+.table-border {
+    border: 1px solid #000;
+}
+
+table {
+    padding: 10px!important;
+    margin: auto;
+}
+
+table th {
+    text-align: center!important;
+}
+
+.color1 {
+    background-color: #dcdddf;
+}
+
+.color2 {
+    background-color: #f4b5d0;
+}
+
+.color2 pre {
+    background-color: #f4b5d0!important;
+}
+
+.color3 {
+    background-color: #e69278;
+}
+
+.color3 pre {
+    background-color: #e69278!important;
+}
+
+.color4 {
+    background-color: #b78bbe;
+}
+
+.color4 pre {
+    background-color: #b78bbe!important;
+}
+
+.color5 {
+    background-color: #fff79a;
+}
+
+.color5 pre {
+    background-color: #fff79a!important;
+}
+
+.color6 {
+    background-color: #ffffff;
+}
+
+.color6 pre {
+    background-color: #ffffff!important;
+}
+
+.color7 {
+    background-color: #8ca8d7;
+}
+
+.color7 pre {
+    background-color: #8ca8d7!important;
+}
+
+.color8 {
+    background-color: #f9af7e;
+}
+
+.color9 {
+    background-color: #a0cf98;
+}
+
+.error {
+    background-color: red;
+}
+
+.table-space {
+    border-collapse: collapse!important;
+    border: 0;
+}
+
+.table-space th,
+td {
+    padding: 5px;
+    border-color: black;
+}
+
+td ol {
+    padding-inline-start: 10px;
+}
+
+.table-flex {
+    display: flex;
+}
+
+.table-block {
+    display: table;
+}
+
+.align-center {
+    margin: 20px auto;
+    width: 60%;
+}
+
+.alignFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+}
+
+.middleSpace {
+    justify-content: space-between;
+}
+
+.borderText {
+    border: 2px solid #000;
+    margin: 10px 0;
+}
+
+.headerText {
+    background: black;
+    color: white;
+    display: inline-block;
+    padding: 5px;
+}
+
+.headerBlock {
+    display: block;
+}
+
+.spaceText {
+    padding: 5px;
+}
+
+.alignFlex p {
+    margin: 0!important;
+}
+
+p i {
+    font-size: 15px;
+}
+
+.floatRight {
+    float: right;
+    text-align: justify;
+}
+
+table .alignFlex {
+    border: 1px solid #000;
+}
+
+.twoBlocks {
+    display: flex;
+    flex-direction: row;
+}
+
+.textColor {
+    color: red;
+}
+
+.shrinerColor {
+    color: #871539;
+}
+
+th.shrinerColor,
+p.shrinerColor {
+    font-weight: bold;
+}
+
+.inlineList li {
+    float: left;
+    margin-left: 20px;
+}
+
+.bottomAlign {
+    border: 0;
+    border-bottom: 2px solid #000;
+    padding: 5px;
+}
+
+.bottomAlign h5,
+.boldSize {
+    font-weight: bold;
+}
+
+table label {
+    font-weight: normal;
+}
+
+.alignJustify {
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.greyColor {
+    background-color: #ccc;
+}
+
+.greyColor th {
+    text-align: left!important;
+}
+
+.blockWidth {
+    margin: 5px;
+}
+
+#divToSearch {
+    margin: 50px;
+}
+
+.form-check.form-check-inline {
+    display: inline;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+
+/* search bar styling */
+
+.searchbar {
+    padding: 8px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.searchicon {
+    background: black;
+    border: black;
+    color: white;
+}
+
+.searchFormInputField {
+    position: fixed;
+    top: 0px;
+    right: 5px;
+    /* color: cadetblue; */
+    color: whitesmoke;
+    z-index: 5;
+}
+
+.section {
+    font-size: 24px;
+    margin-top: 25px;
+    text-align: justify;
+}
+
+.alignCenter {
+    text-align: center;
+}
+
+
+/* nav bar styling grey out background*/
+
+.fixedNav {
+    width: 100vw;
+    background: black;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+#overlay {
+    position: fixed;
+    /* Sit on top of the page content */
+    display: none;
+    /* Hidden by default */
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black background with opacity */
+    z-index: 2;
+    /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+    /* Add a pointer on hover */
+}
+
+
+/* Add to home screen button */
+
+.add-button {
+    position: absolute;
+    top: 70px;
+    right: 2px;
+    /* color: cadetblue; */
+    color: whitesmoke;
+    z-index: 4;
+    border-radius: 17px;
+    margin: 10px;
+    background-color: #121315;
+    border-color: #f5f5f5;
+}
+
+.add-button:hover {
+    cursor: pointer;
+    background-color: #464040;
+    color: white;
+    border-color: #f5f5f5;
+    /* font-weight: bold; */
+}
+
+.slideanim {
+    visibility: hidden;
+}
+
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    /* The duration of the animation */
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible;
+}
+
+
+/* To add a tab space */
+
+.tab1 {
+    tab-size: 4;
+}
+
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@media (min-width: 451px) and (max-width: 1100px) {
+    table ol,
+    table ul {
+        padding-inline-start: 10px;
+    }
+    table {
+        font-size: 12px;
+        word-break: break-word;
+    }
+    table .alignFlex {
+        display: block;
+    }
+    img {
+        width: 50%!important;
+    }
+    label,
+    table ul {
+        font-size: 12px!important;
+    }
+    .formBlock {
+        /* display: inline-block; */
+    }
+}
+
+@media (min-width: 300px) and (max-width: 450px) {
+    table,
+    img {
+        width: auto!important;
+        height: auto!important;
+    }
+    body {
+        word-break: break-all;
+    }
+    table {
+        display: table;
+        font-size: 12px;
+    }
+    img:not(.chkdWidth) {
+        width: 200px!important;
+    }
+    #divToSearch {
+        margin: 20px;
+    }
+    .referTable {
+        font-size: 3px;
+    }
+    table ol,
+    table ul {
+        padding-inline-start: 10px;
+    }
+    div,
+    p,
+    ol,
+    ul {
+        font-size: 13px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    h2 {
+        font-size: 23px;
+    }
+    h3 {
+        font-size: 21px;
+    }
+    .alignColumn {
+        flex-direction: column;
+    }
+    td.flex-center {
+        display: block;
+    }
+    .twoBlocks {
+        flex-direction: column;
+    }
+    ul,
+    ol {
+        padding-inline-start: 20px!important;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 727px) {
+    #divToSearch {
+        margin: 20px;
+    }
+    .referTable {
+        font-size: 8px;
+    }
+    div,
+    p,
+    ol,
+    ul {
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 23px;
+    }
+    table ol,
+    table ul {
+        padding-inline-start: 10px;
+    }
+    .twoBlocks {
+        flex-direction: column;
+    }
+    ul,
+    ol {
+        padding-inline-start: 20px!important;
+    }
+}
+
+
+/* {
+    box-sizing: border-box;
+} */
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+
+.open-button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    float: right;
+    top: 16px;
+    right: 0px;
+}
+
+
+/* The popup form - hidden by default */
+
+.form-popup {
+    position: fixed;
+    padding: 10px;
+    z-index: 500;
+    right: 12px;
+    color: black;
+    background: white;
+    margin-top: 100px;
+    border: 1px solid;
+    box-shadow: 1px 1px 14px rgb(22, 113, 197);
+    border-radius: 8px;
+}
+
+
+/* Add styles to the form container */
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    color: rgb(22, 113, 197);
+    /* color: rgb(22, 113, 197);
+} */
+}
+
+
+/* Full-width input fields */
+
+.form-container input[type=text],
+.form-container input[type=password] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    color: rgb(40, 137, 228);
+}
+
+
+/* When the inputs get focus, do something */
+
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+/* Set a style for the submit/login button */
+
+.form-container .btn {
+    background-color: #04aa49;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    opacity: 0.8;
+}
+
+
+/* Add a red background color to the cancel button */
+
+.form-container .cancel {
+    background-color: red;
+    width: fit-content;
+}
+
+
+/* Add some hover effects to buttons */
+
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
