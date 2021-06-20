@@ -1,8 +1,8 @@
 <?php
-	$servername = "localhost";
-	$username = "admin";
-	$password = "monarchs";
-	$dbname = "CHKD_Web_Dev";
+	$servername = "agitechsample.clbifhef4gsa.us-east-2.rds.amazonaws.com";
+	$username = "handson";
+	$password = "handsonhandson";
+	$dbname = "Chkd_Web";
 
 	// $servername = "handson-mysql";
 	// $username = "kumar";
