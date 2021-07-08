@@ -29,6 +29,47 @@ if(isset($_POST['submit']))
 //    $result_1 = $conn->query($sql_1);
    
 }
+if(isset($_POST['submit1']))
+{
+   $content = $_POST['editor1'];
+//    echo $content;
+   $module = $_REQUEST['module'];
+   $sql_1 = "SELECT * FROM modules_home ORDER BY module_id DESC LIMIT 1;";
+   $result_1 = $conn->query($sql_1);
+   {
+       if($result_1->num_rows>=0){
+           while($row = $result_1->fetch_assoc()){
+               $module_id = $row['module_id'];
+           }
+        $module_id = $module_id + 1;
+        $sql_12 = "INSERT INTO modules_home (title, description) VALUES ('$module', '$content');";
+        $result_12 = $conn->query($sql_12);
+       }
+   }
+   $sql = "INSERT INTO edit_modules (module_id, module_content) VALUES ('$module', '$content');";
+   $result = $conn->query($sql);
+   if($result->num_rows>=0){
+      echo '<script>
+        setTimeout(function () { 
+            swal({
+              title: "Modules",
+              text: "Updated Successfully ",
+              type: "success",
+              confirmButtonText: "OK"
+            },
+            function(isConfirm){
+              if (isConfirm) {
+                window.location.href = "edit_modules.php";
+              }
+            }); }, 1000);
+        </script>';
+   }
+   // echo $sql;
+   // echo $result;
+//    $sql_1 = "SELECT * FROM edit_modules WHERE module_id = '$module_id';";
+//    $result_1 = $conn->query($sql_1);
+   
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -118,7 +159,7 @@ if(isset($_POST['submit']))
 
     ul.collapse a {
         font-size: 20px !important;
-    }
+    } 
     #wrapper
 {
  margin:0 auto;
@@ -624,13 +665,14 @@ if(isset($_POST['submit']))
         </div>
         <ul class="nav nav-tabs ">
 				<li class="active"><a data-toggle="tab" href="#menu">Edit Module</a></li>
-                <!-- <li><a data-toggle="tab" href="#menu1">Create Module</a></li> -->
+                <li><a data-toggle="tab" href="#menu1">Create Module</a></li>
                 <!-- <li><a data-toggle="tab" href="#menu2">Add Under Learning Resources</a></li> -->
 
 			</ul>
         <br>
         <br>
-        <div class="container" id = "menu1">
+        <div class="tab-content">
+        <div id="menu" class="resume tab-pane fade in active" style = "margin:30px">
                         <div class="dropdown">
                         
                             <button class="btn btn-primary dropdown-toggle" id="menu" type="button" data-toggle="dropdown">Choose Module 
@@ -647,10 +689,10 @@ if(isset($_POST['submit']))
                             ?> 
                             </ul>
                         </div>
-                    </div>
+                    
         <br>
         <br>
-        <div id = "#menu1">
+       
         <h3> Click in the Box below to edit Module  Content</h3>
                     
                     <form action="" method="post">
@@ -667,7 +709,7 @@ if(isset($_POST['submit']))
 								}
 							    ?>
             </textarea>
-            <input type="submit" class="mrgn_Submit btn btnshadowTrans allBtnProps" style = "margin-left:45%;" name = "submit" value="Submit"><h5></h5></button>	
+            <input type="submit" class="mrgn_Submit btn btnshadowTrans allBtnProps" style = "background-color: #4CAF50; border: none; color: white; padding: 16px 32px; text-decoration: none; margin: 4px 802px; cursor: pointer;"  name = "submit" value="Submit">
 					</form>
             </div>
                     <script type="text/javascript">
@@ -675,8 +717,35 @@ if(isset($_POST['submit']))
                      CKEDITOR.replace( 'editor1' );
                      CKEDITOR.add  
                     </script>
-            </div>
+            
+            <div id="menu1" class="tab-pane fade">
+
+            <h3>Create</h3>
+                    <br>
+                    <form action="" method="post">
+                   
+                    <br>
+                    <br>
+                    <textarea name="module" placeholder = "Enter Module Name"></textarea>
+                    <br>
+                    <br>
+                    <textarea name="editor1" class="ckeditor"></textarea>
+
+                    <input type="submit" class="mrgn_Submit btn btnshadowTrans allBtnProps" style = "background-color: #4CAF50; border: none; color: white; padding: 16px 32px; text-decoration: none; margin: 4px 802px; cursor: pointer;"  name = "submit1" value="Submit">
+					</form>
+                    <script type="text/javascript">
+                    
+                     CKEDITOR.replace( 'editor1' );
+                     CKEDITOR.add  
+                    </script>
+
+            
+
     </div>
+
+
+    </div>
+
     <script>
         // function openNav() {
         //     document.getElementById("mySidebar").style.width = "250px";
