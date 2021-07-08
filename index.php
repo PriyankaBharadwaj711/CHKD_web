@@ -86,25 +86,25 @@ $id = $_REQUEST['id'];
               //  });
               
             
-            //   $("#openLogin").on('click', function(e) {
-            //     console.log("on click");
-            //     loginOpened = true;
-            //     $("#myForm").show();
+              $("#openLogin").on('click', function(e) {
+                console.log("on click");
+                loginOpened = true;
+                $("#myForm").show();
                 
-            //   });
-            //   $("#mainContent").not("#myForm").click(function(e) {
-            //     console.log("inside maincontent");  
-            //     if(!loginOpened)
-            //       {
-            //         console.log("clicked");
-            //         $("#myForm").hide();
-            //       }
-            //       loginOpened = false;
-            //     });
-            //   $("#closeLogin").on('click', function(e) {
-            //     //console.log("on click");
-            //     $("#myForm").hide();
-            //   });
+              });
+              $("#mainContent").not("#myForm").click(function(e) {
+                console.log("inside maincontent");  
+                if(!loginOpened)
+                  {
+                    console.log("clicked");
+                    $("#myForm").hide();
+                  }
+                  loginOpened = false;
+                });
+              $("#closeLogin").on('click', function(e) {
+                //console.log("on click");
+                $("#myForm").hide();
+              });
               $("#search_term").on('input', function(e) {
                 console.log("on click");
                 loginOpened = true;
@@ -759,7 +759,7 @@ function do_search()
             </div>
         </div>
         
-        <!-- <div class="form-popup" id="myForm" style="display:block;">
+        <div class="form-popup" id="myForm" style="display:block;">
                 <form action="login.php" class="form-container" method="POST">
                     <h4 style="text-align: center;">Login</h4>
 
@@ -772,7 +772,7 @@ function do_search()
                     <button type="submit" class="btn">Login</button>
                     <button type="button" class="btn cancel" id="closeLogin">Close</button>
                 </form>
-            </div>  -->
+            </div> 
 
         <div id="mainContent" class="content">
             <div id="overlay" onclick="closeNav()"></div>
@@ -802,7 +802,15 @@ function do_search()
                                     <form method="post"action="module_home" onsubmit="return do_search();">
                                     <input type="text" id="search_term" name="search_term" placeholder="Enter Search" onkeyup="do_search();">
                                     <input type="submit" name="search" value="SEARCH">
-                                    
+                                    <?php
+                                    if($id == 18){
+                                        echo '<a href ="edit_modules.php" class = "open-button"></span>  Edit Modules   </a>';
+                                    }
+                                    else{
+                                        echo '<a id="openLogin" href = "#myForm" class = "open-button"></span>  LOGIN </a>';
+                                    }
+                                    ?>
+                                    </form>
                                 <div id="result_div"></div>
                             </div>
                         </div>
