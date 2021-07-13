@@ -271,6 +271,57 @@ function do_search()
     ul.collapse a {
         font-size: 20px !important;
     }
+
+    .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    color: rgb(22, 113, 197);
+    /* color: rgb(22, 113, 197);
+} */
+}
+
+
+.form-inline {  
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.form-inline button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+  
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
     
 
 #wrapper
@@ -338,6 +389,50 @@ function do_search()
 #result_div li a .desc
 {
  color:#6E6E6E;
+}
+
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+/* Add some margins for each label */
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+/* Style the input fields */
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+/* Style the submit button */
+.form-inline button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
 
 .open-button {
@@ -424,6 +519,8 @@ function do_search()
     opacity: 1;
 }
 
+
+
 </style>
 
 <body>
@@ -462,43 +559,43 @@ function do_search()
                         <a href="#topic2_1" class='tab ' id='Topic 2.1'>CHKD Trauma Triage Criteria</a>
                     </li>
                     <li id="t2.2" class="link">
-                        <a href="#topic2_2" class='tab ' id='Topic 2.2'>Trauma Admission Protocol</a>
+                        <a href="#topic2_1" class='tab ' id='Topic 2.2'>Trauma Admission Protocol</a>
                     </li>
                     <li id="t2.3" class="link">
-                        <a href="#topic2_3" class='tab' id='Topic 2.3'>Patient Access Technician - ED</a>
+                        <a href="#topic2_1" class='tab' id='Topic 2.3'>Patient Access Technician - ED</a>
                     </li>
                     <li id="t2.4" class="link">
-                        <a href="#topic2_4" class='tab' id='Topic 2.4'>CHKD Transfer Center - Kid Comm</a>
+                        <a href="#topic2_1" class='tab' id='Topic 2.4'>CHKD Transfer Center - Kid Comm</a>
                     </li>
                     <li id="t2.5" class="link">
-                        <a href="#topic2_5" class='tab' id='Topic 2.5'>Activation of the Trauma System from Scene by
+                        <a href="#topic2_1" class='tab' id='Topic 2.5'>Activation of the Trauma System from Scene by
                             EMS</a>
                     </li>
                     <li id="t2.6" class="link">
-                        <a href="#topic2_6" class='tab' id='Topic 2.6'>Activation of the Trauma System Walk-In
+                        <a href="#topic2_1" class='tab' id='Topic 2.6'>Activation of the Trauma System Walk-In
                             Patients</a>
                     </li>
                     <li id="t2.7" class="link">
-                        <a href="#topic2_7" class='tab' id='Topic 2.7'>Trauma Team Activation Pathway</a>
+                        <a href="#topic2_1" class='tab' id='Topic 2.7'>Trauma Team Activation Pathway</a>
                     </li>
                     <li id="t2.8" class="link">
-                        <a href="#topic2_8" class='tab' id='Topic 2.8'>Trauma/Medical Resuscitation Pre-Arrival
+                        <a href="#topic2_1" class='tab' id='Topic 2.8'>Trauma/Medical Resuscitation Pre-Arrival
                             Checklist</a>
                     </li>
                     <li id="t2.9" class="link">
-                        <a href="#topic2_9" class='tab' id='Topic 2.9'>Pre-Arrival/Debrief Documentation</a>
+                        <a href="#topic2_1" class='tab' id='Topic 2.9'>Pre-Arrival/Debrief Documentation</a>
                     </li>
                     <li id="t2.10" class="link">
-                        <a href="#topic2_10" class='tab' id='Topic 2.10'>Trauma Team Positioning</a>
+                        <a href="#topic2_1" class='tab' id='Topic 2.10'>Trauma Team Positioning</a>
                     </li>
                     <li id="t2.11" class="link">
-                        <a href="#topic2_11" class='tab' id='Topic 2.11'>Trauma Roles</a>
+                        <a href="#topic2_1" class='tab' id='Topic 2.11'>Trauma Roles</a>
                     </li>
                     <li id="t2.12" class="link">
-                        <a href="#topic2_12" class='tab' id='Topic 2.12'>Pediatric Surgery Response</a>
+                        <a href="#topic2_1" class='tab' id='Topic 2.12'>Pediatric Surgery Response</a>
                     </li>
                     <li id="t2.13" class="link">
-                        <a href="#topic2_13" class='tab' id='Topic 2.13'>Trauma Alert Response</a>
+                        <a href="#topic2_1" class='tab' id='Topic 2.13'>Trauma Alert Response</a>
                     </li>
 
                 </ul>
@@ -758,29 +855,13 @@ function do_search()
                 </ul>
             </div>
         </div>
-        
-        <div class="form-popup" id="myForm" style="display:block;">
-                <form action="login.php" class="form-container" method="POST">
-                    <h4 style="text-align: center;">Login</h4>
-
-                    <label for="email"><b>Username</b></label>
-                    <input type="text" placeholder="Enter Username" name="username" id = "username" required>
-
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="password" id="password" required>
-
-                    <button type="submit" class="btn">Login</button>
-                    <button type="button" class="btn cancel" id="closeLogin">Close</button>
-                </form>
-            </div> 
+         
 
         <div id="mainContent" class="content">
             <div id="overlay" onclick="closeNav()"></div>
             <!-- nav bar -->
             <div class="fixedNav">
-                <button class="openbtn" onclick="openNav()"><i class="fa fa-bars" style="margin: 5px;"></i><img
-                        src="./images/chkdIcon.png" alt="Trauma Org Chart" width="50" height="50"></button>
-                
+                <button class="openbtn" onclick="openNav()"><i class="fa fa-bars" style="margin: 5px;"></i></button>
                      
             </div>
            
@@ -792,24 +873,30 @@ function do_search()
             background-repeat: no-repeat;
             background-color: #2f6cbf;">
 
-                <div class="topnav">
+                <div class="container-fluid sectionav">
                     <button class="add-button"> Add to Desktop</button>
-                    <form class="searchFormInputField">
-                        <div class="input-group" style="margin: 7px 15px 15px 12px;width:250px">
+                </div>
+                
+                    
+                    
+                    
+              
+               
+            </div>
+            
+        </div>
+
+        <br>
+        <br>
+
+        <form class="form-inline">
+                        <div class="input-group" style="width:100%">
                             <div id="wrapper">
 
                                 <div id="search_box">
-                                    <form method="post"action="module_home" onsubmit="return do_search();">
+                                    <form method="post" action="module_home" onsubmit="return do_search();">
                                     <input type="text" id="search_term" name="search_term" placeholder="Enter Search" onkeyup="do_search();">
-                                    <input type="submit" name="search" value="SEARCH">
-                                    <?php
-                                    if($id == 18){
-                                        echo '<a href ="edit_modules.php" class = "open-button"></span>  Edit Modules   </a>';
-                                    }
-                                    else{
-                                        echo '<a id="openLogin" href = "#myForm" class = "open-button"></span>  LOGIN </a>';
-                                    }
-                                    ?>
+                                   
                                     </form>
                                 <div id="result_div"></div>
                             </div>
@@ -817,12 +904,12 @@ function do_search()
 
                         </div>
                     </form>
-                </div>
-              
-               
-            </div>
 
             <div class="container-fluid section" id="dedication">
+
+            
+                
+                
                     <h2>A Deon to Michele Lombardo</h2>
                     <p>Michele was special. Once you met her, you couldn't imagine a time without her. She had that
                         unique ability to make you feel better about yourself. You liked who you were when you were with
@@ -1002,722 +1089,9 @@ function do_search()
                     </div>
                     </p>
                 </div>
-                <div class="container-fluid section" id="traumaActivations">
-                    <p>
-                    <h1 class="h1Green">Trauma Activations</h2>
-                        </p>
-                </div>
-                <div class="container-fluid section" id="topic2_1">
-                    <p>
-                    <h2>CHKD Trauma Triage Criteria</h2>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Level I</th>
-                                <th scope="col">Level II</th>
-
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div class="page" title="Page 15">
-                                        <div class="section">
-                                            <div class="layoutArea">
-                                                <div class="column">
-                                                    <p>&nbsp;</p>
-                                                    <div class="page" title="Page 15">
-                                                        <div class="section">
-                                                            <div class="layoutArea">
-                                                                <div class="column">
-                                                                    <p style="text-align: center;"><strong>Vitals and
-                                                                            consciousness</strong></p>
-                                                                    <ul>
-                                                                        <li>
-                                                                            GCS&le;8
-                                                                        </li>
-                                                                        <li>
-                                                                            SBP&lt;90
-                                                                        </li>
-                                                                        <li>
-                                                                            Signs of poor perfusion, VS outside age
-                                                                            specific guidelines
-                                                                        </li>
-                                                                        <li>
-                                                                            <p>Intubated / need emergent airway</p>
-                                                                            <p style="text-align: center;">
-                                                                                <strong>Anatomy of injury</strong></p>
-                                                                        </li>
-                                                                        <li>
-                                                                            All penetrating injuries to head, neck,
-                                                                            torso and extremities proximal to elbow
-                                                                            and knee
-                                                                        </li>
-                                                                        <li>
-                                                                            <p>Flail Chest</p>
-                                                                        </li>
-                                                                        <li>
-                                                                            <p>&ge;2 proximal long bone fractures
-                                                                                (femur, humerus)</p>
-                                                                        </li>
-                                                                        <li>
-                                                                            <p>Crushed, degloved or mangled extremity
-                                                                            </p>
-                                                                        </li>
-                                                                        <li>
-                                                                            <p>Amputation proximal to wrist and ankle
-                                                                            </p>
-                                                                        </li>
-                                                                        <li>
-                                                                            <p>Paralysis - spinal cord injury with
-                                                                                neurologic deficit</p>
-                                                                        </li>
-                                                                        <li>
-                                                                            <p>Burns &ge; 25% TBSA</p>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="page" title="Page 15">
-                                        <div class="section">
-                                            <div class="layoutArea">
-                                                <div class="column">
-                                                    <div class="page" title="Page 15">
-                                                        <div class="section">
-                                                            <div class="layoutArea">
-                                                                <div class="column">
-                                                                    <p style="text-align: center;"><strong>Vitals and
-                                                                            consciousness</strong></p>
-                                                                    <ul>
-                                                                        <li>
-                                                                            <p>GCS13or14</p>
-                                                                            <p style="text-align: center;">
-                                                                                <strong>Falls</strong></p>
-                                                                        </li>
-                                                                        <li>
-                                                                            <p>Children &gt; 10 ft. or 2-3 x height of
-                                                                                child</p>
-                                                                            <p style="text-align: center;">
-                                                                                <strong>High-risk auto crash</strong>
-                                                                            </p>
-                                                                        </li>
-                                                                        <li>
-                                                                            <p>Intrusion: &gt; 12 in. occupant site;
-                                                                                &gt; 18 in. in any site</p>
-                                                                        </li>
-                                                                        <li>
-                                                                            <p>Rollover</p>
-                                                                        </li>
-                                                                        <li>
-                                                                            <p>Ejection (partial or complete) from
-                                                                                automobile</p>
-                                                                        </li>
-                                                                        <li>
-                                                                            <p>Death in same passenger compartment</p>
-                                                                        </li>
-                                                                        <li>
-                                                                            <p>Vehicle automatic crash notification data
-                                                                                consistent</p>
-                                                                        </li>
-                                                                        <li>
-                                                                            <p>Auto vs. pedestrian / bicyclist thrown,
-                                                                                run over<br /> or with significant
-                                                                                (&gt;10 mph) impact</p>
-                                                                        </li>
-                                                                        <li>
-                                                                            <p>Motorcycle crash &gt; 20 mph with high
-                                                                                risk injury</p>
-                                                                            <p style="text-align: center;">
-                                                                                <strong>Others</strong></p>
-                                                                        </li>
-                                                                        <li>
-                                                                            <p>Burns &gt; 10%, &lt;25% TBSA</p>
-                                                                        </li>
-                                                                        <li>
-                                                                            <p>Thermal injury with inhalation</p>
-                                                                        </li>
-                                                                        <li>
-                                                                            <p>GSW extremity - distal</p>
-                                                                        </li>
-                                                                        <li>
-                                                                            <p>Pelvic fractures</p>
-                                                                        </li>
-                                                                        <li>
-                                                                            <p>Open or depressed skull fracture</p>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-
-                            </tr>
-
-
-                        </tbody>
-                    </table>
-                    </p>
-                </div>
-                <div class="container-fluid section" id="topic2_2">
-                    <p>
-                    <h2>Trauma Admission Protocol</h2>
-
-                    </p>
-                    <div class="page" title="Page 16">
-                        <div class="section">
-                            <div class="layoutArea">
-                                <div class="column">
-                                    <p>In order to facilitate patient care and to eliminate potential misunderstandings
-                                        between various services caring for trauma patients, the Trauma PI Committee has
-                                        established the following guideline regarding admission to and transfer of
-                                        trauma patients between services:</p>
-                                    <ul>
-                                        <li>
-                                            <p>Patients with a mechanism for potential multiple system injuries should
-                                                be evaluated by the Trauma Service.</p>
-                                        </li>
-                                        <li>
-                                            <p>Patients with multiple system injuries, hemodynamic instability, or
-                                                spinal cord injuries will be admitted to the trauma service.</p>
-                                        </li>
-                                        <li>
-                                            <p>Patients with isolated orthopedic or neurosurgical injuries requiring
-                                                PICU care will be admitted to the Trauma Service.</p>
-                                        </li>
-                                        <li>
-                                            <p>Admission to the Trauma Service is appropriate if an ongoing evaluation
-                                                for occult injuries is in progress.</p>
-                                        </li>
-                                        <li>
-                                            <p>Patients with single system injuries, without a mechanism for multiple
-                                                system injury shall be directly admitted to the appropriate service.</p>
-                                        </li>
-                                        <li>
-                                            <p>Pre-existing medical conditions do not necessarily constitute reasons to
-                                                remain on the Trauma Service with a single system injury.</p>
-                                        </li>
-                                        <li>
-                                            <p>Once suspected occult injuries have been ruled out and the patient with
-                                                single system injuries is stable, the patient may be transferred from
-                                                the Trauma Service to the<br /> appropriate service.</p>
-                                        </li>
-                                        <li>
-                                            <p>Trauma Service will complete a tertiary survey for all trauma patients
-                                                within:</p>
-                                            <p>- 24 hours once admitted to the general care units<br /> - 72 hours once
-                                                admitted to the PICU and repeat when</p>
-                                            <p>sedation is weaned</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-fluid section" id="topic2_3">
-                    <p>
-                    <h2>Trauma Registration Protocol-
-                        Patient Access Technician Emergency Department</h2>
-                    </p>
-                    <div class="page" title="Page 17">
-                        <div class="section">
-                            <div class="section">
-                                <div class="layoutArea">
-                                    <div class="column">
-                                        <ol>
-                                            <li>
-                                                <p>The CHKD communication center will activate the trauma team via the
-                                                    hospital paging system.</p>
-                                            </li>
-                                            <li>
-                                                <p>Walk-in patients or trauma patients whose status changes in the ED,
-                                                    the ED physician will instruct the PAT to send a level 1 or level 2
-                                                    trauma alert.</p>
-                                            </li>
-                                            <li>
-                                                <p>The PAT will call the operator and ask them to place an overhead
-                                                    announcement AND a level 1 or level 2 trauma team page.</p>
-                                            </li>
-                                            <li>
-                                                <p>PAT will remove the trauma chart from the red folder (located inside
-                                                    the trauma binder) or drawer at PAT desk.</p>
-                                            </li>
-                                            <li>
-                                                <p>If the patient has an existing MRN in the CHKD system, quick register
-                                                    the patient by using the legal name listed on the transfer
-                                                    documents. The referring facility can fax any demographic
-                                                    information to the ED fax machine.</p>
-                                            </li>
-                                            <li>
-                                                <p>Any patient whose identity cannot be verified within 10 minutes of
-                                                    estimated patient arrival time will be assigned a trauma number.</p>
-                                                <ol style="list-style-type: lower-alpha;">
-                                                    <li>
-                                                        <p>Remove a trauma number from the trauma binder.</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>Enter the trauma number manually into the MRN field in</p>
-                                                        <p>Eclipsys (Example - TPXXXXXX)</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>The complaint is TRAUMA (not mechanism of injury).</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>If PT date of birth is unknown, enter 01/01/1901 in the date
-                                                            of birth field.</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>Enter patient gender and age once available</p>
-                                                        <p><strong>*Note:</strong> Certain lab results are age/gender
-                                                            dependent so enter information ASAP</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>If the patient presents from a referring facility and has a
-                                                            trauma number, list the referring facility trauma number in
-                                                            the complaint field. This number can be used to identify the
-                                                            patient if further information is needed from the referring
-                                                            facility (Example - TRAUMA TP 12345).</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>Update all required fields of the trauma log.</p>
-                                                    </li>
-                                                    <li>
-                                                        <p> Once the DOB has
-                                                            been verified, update the information in Eclipsys.
-                                                            Re-sticker all chart
-                                                            documents and armband with the updated information.<br />
-                                                        </p>
-                                                        <p><strong>*Note:</strong>
-                                                            If there are no trauma numbers in the trauma binder use the
-                                                            trauma name
-                                                            convention TP with the Eclipsys generated MRN.
-                                                        </p>
-                                                    </li>
-                                                </ol>
-                                            </li>
-                                            <li>
-                                                <p>Prepare two white Eclipsys armbands (ED/Inpatient and OR) with blue
-                                                    TRAUMA clasps and one blood bank bracelet.</p>
-                                                <p><strong>*Note: When using a CHKD trauma number for a patient who
-                                                        presents
-                                                        from a referring facility, do not remove the referring facility
-                                                        bracelet.</strong></p>
-                                            </li>
-                                            <li>
-                                                <p>Hand the armbands to the ED clinical staff to apply to the patient.
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>Place stickers on the packet. Hand off packet, armbands, stickers,
-                                                    and
-                                                    blood bank bracelet to the Documentation RN.<br />
-                                                    <strong>*Note:</strong> The blood bank bracelet/number should remain
-                                                    with the patient to be used on the floor if needed.</p>
-                                            </li>
-                                            <li>Assist with notification of consultants.</li>
-                                            <li>Place patient gender and age into system.
-                                                <p>**Patient name change cannot occur within the first 72
-                                                    hrs of a trauma patient presenting to the ED. The legal name can be
-                                                    placed in
-                                                    the other name field upon verification for those&nbsp; &nbsp; &nbsp;
-                                                    &nbsp;
-                                                    &nbsp; &nbsp; &nbsp;initially deemed &ldquo;unidentified.&rdquo; A
-                                                    merge of the
-                                                    medical record may occur after 72 hrs.</p>
-                                            </li>
-                                        </ol>
-                                    </div>
-                                </div>
-                                <div class="layoutArea">&nbsp;</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-fluid section" id="topic2_4">
-                    <p>
-                    <h2>CHKD Transfer Center - Kid Comm</h2>
-                    </p>
-                    <div class="page" title="Page 19">
-                        <div class="section">
-                            <div class="section">
-                                <div class="layoutArea">
-                                    <div class="column">
-                                        <p>The Trauma Alert System is a mechanism by which notification of an incoming
-                                            trauma patient activates a series of protocols that ensure hospital-wide
-                                            preparedness for the evaluation and care of that patient and his/her family.
-                                            All calls from referring hospitals regarding trauma and transport must be
-                                            routed through the CHKD Transfer Center Kid Comm (@ 668-8000) which is a
-                                            system-wide communication network, staffed 24/7 by a trained communication
-                                            specialist.</p>
-                                        <p>Operationally, this system has a multi-person conference capability, enabling
-                                            an incoming call to be simultaneously received by multiple members of the
-                                            trauma team. In addition, the communication specialist commands a trauma
-                                            paging system, which allows individual or group calls to members of the
-                                            entire Trauma Team. This allows immediate</p>
-                                        <p>and interference-free access to key trauma personnel. Electronic data and
-                                            audio taped records are made of all communications. Audiotapes are saved for
-                                            a period of 30 days. When indicated, trauma calls are reviewed both from the
-                                            tape and the electronic dispatch log.</p>
-                                        <p><strong>Trauma Transfer Protocol</strong></p>
-                                        <p>All trauma transfers from referring hospitals will be accepted by the<br />
-                                            ED Attending or Trauma Surgeon. Any subspecialty consultation can occur
-                                            after acceptance of the patient. Request to receive burn patients and
-                                            patients 15&gt; will be evaluated on a case-by-case basis and, when
-                                            appropriate, diverted to an adult trauma center.</p>
-                                        <p>The Kid Comm Communication Specialist will phone conference in the CHKD ED
-                                            attending and the referring facility MD. For Level 1 trauma patients, the
-                                            conference call will also include the trauma Surgeon on call. The Kid Comm
-                                            Communication Specialist will remain on the call to record patient
-                                            information into FirstNet.</p>
-                                    </div>
-                                </div>
-                                <div class="layoutArea">&nbsp;</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="page" title="Page 20">
-                        <div class="section">
-                            <div class="layoutArea">&nbsp;</div>
-                            <div class="layoutArea">
-                                <div class="column">
-                                    <p>The ED Attending will ensure that a trauma alert is initiated for those patients
-                                        that fit the Trauma Alert Protocol and will notify the ED Charge RN of the
-                                        transfer and current patient status. The following information should be
-                                        obtained from the referring facility at the time of initial contact:</p>
-                                    <p>1. Patient name<br /> 2. Patient age<br /> 3. Patient weight<br /> 4. Patient
-                                        gender<br /> 5. Mechanism of injury<br /> 6. Injuries sustained or suspected 7.
-                                        Approximate time of injury</p>
-                                    <p>8. Initial vital signs/current vital signs<br /> 9. Method of
-                                        immobilization<br /> 10. IV access and fluid status<br /> 11. Administration of
-                                        blood or blood products 12. Medications administered</p>
-                                    <p>13. Results of lab/radiology studies<br /> 14. Allergies and significant medical
-                                        history 15. Referring MD name and phone number</p>
-                                    <p>The Trauma Surgeon/ED Attending should:</p>
-                                    <p>1. Assist the referring physician in establishing safe and appropriate means of
-                                        transportation.</p>
-                                    <p>2. When medically necessary, request for the CHKD Transport Team or other
-                                        appropriate transport mechanism (e.g. Nightingale, other flight program) shall
-                                        be made.</p>
-                                    <p>3. Provide recommendations for further stabilization prior to and during
-                                        transport to include:</p>
-                                    <ol>
-                                        <li>
-                                            <p>Cervical spine control</p>
-                                        </li>
-                                        <li>
-                                            <p>Appropriate airway control</p>
-                                        </li>
-                                        <li>
-                                            <p>Fluid administration</p>
-                                        </li>
-                                        <li>
-                                            <p>Consideration of continuous monitoring of ETCO2</p>
-                                        </li>
-                                        <li>
-                                            <p>Stabilization of fractures or other clinically indicated</p>
-                                        </li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-fluid section" id="topic2_5">
-                    <p>
-                    <h2>Activation of the Trauma System from Scene by EMS</h2>
-                    </p>
-                    <div class="column">
-                        <p>All calls for transport of the severely injured child directly from the scene
-                            must be made to the CHKD Transfer Center Kid Comm at (757) 668-8000 or via radio
-                            communications (HEAR radio system, 800 MHz system). This includes calls from the
-                            following sources:</p>
-                        <ol>
-                            <li>
-                                <p>Ground EMS units</p>
-                            </li>
-                            <li>
-                                <p>Helicopter transports</p>
-                            </li>
-                        </ol>
-                        <p>Upon receiving a call for a trauma patient, the Communication Specialist will:
-                        </p>
-                        <ol>
-                            <li>
-                                <p>Immediately contact the ED Attending and phone or radio conference the
-                                    physician into the call.</p>
-                            </li>
-                            <li>
-                                <p>Obtain and document the following information during the call:</p>
-                                <ul>
-                                    <li>Call time</li>
-                                    <li>EMS unit</li>
-                                    <li>Patient gender </li>
-                                    <li>Patient age</li>
-                                    <li>Chief complaint </li>
-                                    <li>Vital signs</li>
-                                    <li>Care rendered</li>
-                                    <li>ETA</li>
-                                </ul>
-
-                            </li>
-                            <li>
-                                <p>Receive activation level from ED Attending</p>
-                            </li>
-                            <li>
-                                <p>If ED Attending not available, the Communication Specialist will</p>
-                                <p>assign the activation level.</p>
-                            </li>
-                            <li>
-                                <p>Activate the Trauma Team via AMCOM with appropriate trauma</p>
-                                <p>level (Level 1 or 2).</p>
-                            </li>
-                            <li>
-                                <p>Follow Trauma Team Activation Process Algorithm.</p>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-                <div class="container-fluid section" id="topic2_6">
-                    <p>
-                    <h2>Activation of the Trauma System Walk-In Patients</h2>
-                    </p>
-                    <div>
-                        <p>In the event a patient arrives to the CHKD emergency department via private vehicle/walk-in,
-                            the following process will occur:</p>
-                        <ol>
-                            <li>
-                                <p>Patient will be immediately placed in a trauma resuscitation room.</p>
-                            </li>
-                            <li>
-                                <p>The ED Attending and ED Charge RN will be notified.</p>
-                            </li>
-                            <li>
-                                <p>ED Attending assigns the trauma level and notifies Patient Access Tech of patient
-                                    arrival.</p>
-                            </li>
-                            <li>
-                                <p>Patient Access Tech will call the hospital operator to place the overhead trauma
-                                    announcement and also send a trauma page alert to the trauma team.</p>
-                            </li>
-                            <li>
-                                <p>Patient Access Tech registers the patient utilizing appropriate trauma number
-                                    designation.</p>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-                <div class="container-fluid section" id="topic2_7">
-                    <p>
-                    <h2>Trauma Team Activation Process
-                    </h2>
-                    </p>
-                    <div class="imgDimensions"><img src="./images/activ_process.png" alt="activ_processt" width="800"
-                            height="800"></div>
-                </div>
-                <div class="container-fluid section" id="topic2_8">
-                    <p>
-                    <h2>Trauma/Medical Resuscitation Pre-Arrival Checklist
-                    </h2>
-                    </p>
-                    <div class="imgDimensions"><img src="./images/prechecklist.png" alt="Pre arrival Checklist"
-                            width="800" height="800"></div>
-                </div>
-                <div class="container-fluid section" id="topic2_9">
-                    <p>
-                    <h2>Pre-Arrival/Debrief Documentation
-                    </h2>
-                    </p>
-                    <div class="imgDimensions"><img src="./images/prearrival.png" alt="Pre arrival Checklist"
-                            width="800" height="800"></div>
-                </div>
-                <div class="container-fluid section" id="topic2_10">
-                    <p>
-                    <h2>Trauma Team Positioning
-                    </h2>
-                    </p>
-                    <div class="imgDimensions"> <img src="./images/traumaTeam.png" alt="Girl in a jacket" width="800"
-                            height="900"></div>
-                </div>
-                <div class="container-fluid section" id="topic2_11">
-                    <p>
-                    <h2>Trauma Roles
-                    </h2>
-                    </p>
-                    <div class="imgDimensions"><img src="./images/surgeon_1.png" alt="burns chart" width="1200"
-                            height="1400"></div>
-                    <div class="imgDimensions"><img src="./images/surgeon_2.png" alt="burns chart" width="1200"
-                            height="1400"></div>
-                    <div class="imgDimensions"><img src="./images/surgeon_3.png" alt="burns chart" width="1200"
-                            height="1400"></div>
-                    <div class="imgDimensions"><img src="./images/surgeon_4.png" alt="burns chart" width="1200"
-                            height="1400"></div>
-                    <div class="imgDimensions"><img src="./images/surgeon_5.png" alt="burns chart" width="1200"
-                            height="600"></div>
-
-                </div>
-                <div class="container-fluid section" id="topic2_12">
-                    <p>
-                    <h2>Pediatric Response to Trauma Activations
-                    </h2>
-                    </p>
-                    <div>
-                        <div>
-                            <p><strong>Pediatric Trauma Surgeon</strong> will respond to the ED within 15 minutes for
-                                all Level 1 trauma activations.</p>
-                        </div>
-                        <div>
-                            <p><strong>Senior Surgical Resident/MLP</strong> will respond to the ED within 15 minutes
-                                for all Level 1 trauma activations.</p>
-                            <ul>
-                                <li>
-                                    Will badge swipe upon arrival in the trauma bay
-                                </li>
-                                <li>
-                                    Will announce to the documenting RN your name and role
-                                    on arrival
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <p><strong>Neurosurgery</strong> will respond to the ED within 30 minutes of notification
-                                for the following:</p>
-                            <ul>
-                                <li>Significant penetrating injury to head</li>
-                                <li>Acute intracranial hematoma with >4mm midline shift</li>
-                                <li>Obvious, severe open cranial injury</li>
-                                <li>Comatose patient with unilateral fixed, dilated pupil</li>
-                                <li>Patient with traumatic intracranial or spinal injury needing
-                                    emergent operative management</li>
-                                <li>Will badge swipe upon arrival in the trauma bay</li>
-                                <li>Will announce to the documenting RN your name and role
-                                    on arrival</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <p><strong>Orthopedic Surgery</strong> will respond to the ED within 30 minutes of
-                                notification for the following:</p>
-                            <ul>
-                                <li> Fractured or dislocated extremity without a pulse</li>
-                                <li>Any dislocation that could not be reduced</li>
-                                <li>Will badge swipe upon arrival in the trauma bay</li>
-                                <li>Will announce to the documenting RN your name and role on arrival</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-fluid section" id="topic2_13">
-                    <p>
-                    <h2>Trauma Alert Response
-                    </h2>
-                    </p>
-                    <div>
-                        <h3>Trauma Alert Level 1 Response
-                        </h3>
-                        <p>
-                            All trauma patients arriving by EMS or in transfer who meet the designated physiologic
-                            criteria for a Level 1 response will be initiated. Following personnel will be notified via
-                            the AMCOM paging system:</p>
-                        <ul>
-                            <li>Surgical Attending</li>
-                            <li>ED Attending</li>
-                            <li>Anesthesia</li>
-                            <li>Surgical Resident/Nurse Practitioner</li>
-                            <li>ED Charge RN</li>
-                            <li>Nursing Administrative Supervisor</li>
-                            <li>OR Charge RN</li>
-                            <li>PICU Attending</li>
-                            <li>Diagnostic Radiology and CT</li>
-                            <li>Respiratory Therapy</li>
-                            <li>Blood Bank</li>
-                            <li>Social Work</li>
-                            <li>Chaplain</li>
-                            <li>Trauma Program Manager</li>
-                            <li>PACU Charge RN</li>
-                            <li>Pharmacy</li>
-                            <li>Security</li>
-                            <li>Child Life</li>
-                            <li>ED PAT</li>
-                            <li>ED Trauma RN</li>
-                            <li>ED Trauma Tech</li>
-                            <li>Communications Center</li>
-                        </ul>
-                        <p>Following trauma team members must be in the ED trauma room prior to the patient’s arrival:
-                        </p>
-                        <li>Surgical Attending (≤ 15 min of patient arrival)</li>
-                        <li>ED Attending</li>
-                        <li>PICU Attending</li>
-                        <li>Anesthesia</li>
-                        <li>Surgical Resident/Nurse Practitioner</li>
-                        <li>Senior ED Resident</li>
-                        <li>Lead RN</li>
-                        <li>Med RN</li>
-                        <li>Secondary RN</li>
-                        <li>Lead ED Tech</li>
-                        <li>Secondary ED Tech</li>
-                        <li>Respiratory Therapy</li>
-                        <li>All other team members are to remain outside the trauma
-                            room until needed</li>
-                        <h3>Trauma Alert Level 2 Response</h3>
-                        <p>For those trauma patients who do not meet the physiologic criteria requiring a Level 1
-                            response but may still have significant potential injuries, a Level 2 response will be
-                            initiated.</p>
-                        <p>Following personnel will be notified via the AMCOM paging system:</p>
-                        <ul>
-                            <li>Surgical Attending</li>
-                            <li>ED Attending</li>
-                            <li>Surgical Resident/Nurse Practitioner</li>
-                            <li>ED Charge RN</li>
-                            <li>ED Charge RN</li>
-                            <li>Diagnostic Radiology/CT</li>
-                            <li>Respiratory Therapy</li>
-                            <li>Social Work</li>
-                            <li>Chaplain</li>
-                            <li>Trauma Program Manager</li>
-                            <li>Security</li>
-                            <li>Child Life</li>
-                            <li>ED PAT</li>
-                            <li>ED Trauma RN</li>
-                            <li>ED Trauma Tech</li>
-                            <li>Communications Center</li>
-                        </ul>
-                        <p>Following trauma team members must be in the ED trauma room prior to the patient’s arrival:
-                        </p>
-                        <ul>
-                            <li>
-                                ED Attending
-                            </li>
-                            <li>Surgical Resident/Nurse Practitioner (&le; 15 min of patient arrival)</li>
-                            <li>Senior ED Resident</li>
-                            <li>Lead RN</li>
-                            <li>Secondary RN</li>
-                            <li>Lead ED Tech</li>
-                            <li>Secondary ED Tech</li>
-                            <li>Respiratory Therapy</li>
-                            <li>All other team members are to remain outside the trauma
-                                room until needed</li>
-
-                        </ul>
-                        <p>
-                            * Level 2 trauma will be managed by the ED Attending and will not generally require the
-                            presence of the Trauma Surgeon unless specifically requested by the ED Attending.</p>
-                    </div>
-                </div>
                 <?php
                                 $module_id = $_REQUEST['id'];
-                                $sql = "SELECT * FROM edit_modules ORDER BY id;";
+                                $sql = "SELECT * FROM edit_modules ORDER BY module_id;";
 								$result = $conn->query($sql);
 								if($result->num_rows>=0){
 									while($row=$result->fetch_assoc()){
