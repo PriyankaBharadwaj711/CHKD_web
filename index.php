@@ -156,9 +156,7 @@ $id = $_REQUEST['id'];
     </script>
 
     <script src="./index.js"></script>
-    // <!--  
-    //      <link href="/App512.png" sizes="512x512" rel="apple-touch-startup-image" />
-    // <link href="/App192.png" sizes="192x192" rel="apple-touch-startup-image" /> -->
+
 </head>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript">
@@ -342,15 +340,23 @@ function do_search()
 {
  font-size:18px;
 }
+.section {
+    font-size: 16px;
+    margin-top: 25px;
+    text-align: justify;
+}
+
 #search_box input[type="text"]
 {
- width:250px;
- height:40px;
- padding-left:10px;
- font-size:18px; 
- margin-bottom:15px;
- color:#424242;
- border:none;
+ /* border: 1px solid grey; */
+ border-radius: 5px;
+ /* height: 40px;
+ width: 480px; */
+ /* margin-left : 10px; */
+ /* padding: 2px 23px 12px 30px; */
+ outline: 0;
+ background-color: #f5f5f5;
+ position: fixed;
 }
 #search_box input[type="submit"]
 {
@@ -359,15 +365,19 @@ function do_search()
  background-color:#585858;
  color:white;
  border:none;
+ position: fixed;
 }
     #result_div
 {
- width:600px; 
+ width:100%; 
  margin-top: 10px;
  margin-left: 15px;
+ font-size:12px;
  background-color:white;
  color:white;
  border:none;
+ overflow: auto;
+ position: fixed;
 }
 #result_div li
 { 
@@ -519,11 +529,95 @@ function do_search()
     opacity: 1;
 }
 
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fixednav {
+    width: 100vw;
+    background: black;
+    position: fixed;
+    top: 100;
+    z-index: 5;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #fffff;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
 
 
 </style>
 
 <body>
+    
 
     <div class="searchContentOfCHKD">
         <div id="mySidebar" class="sidebar">
@@ -858,11 +952,36 @@ function do_search()
          
 
         <div id="mainContent" class="content">
-            <div id="overlay" onclick="closeNav()"></div>
+            <div id="overlay" class = "container-fluid" onclick="closeNav()">
+            
+                
+            </div>
+            
+            
             <!-- nav bar -->
-            <div class="fixedNav">
-                <button class="openbtn" onclick="openNav()"><i class="fa fa-bars" style="margin: 5px;"></i></button>
+            <!-- <div class="container-fluid fixedNav">
+                
+                <button class="container-fluid openbtn" onclick="openNav()"><i class="fa fa-bars"></i>
+                </button>
+                
                      
+            </div> -->
+
+            <div class="topnav fixedNav">
+                <button class="container-fluid openbtn" onclick="openNav()"><i class="fa fa-bars"></i>
+                
+            </button>
+    
+
+            <div class="search-container">
+                    <form method="post" action="module_home" onsubmit="return do_search();">
+                        <input type="text" placeholder="Search.." name="search" id="search_term"  onkeyup="do_search();">
+                    <!-- <button type="submit">Submit</button> -->
+                    </form>
+                </div>
+            </div> 
+
+            <div class="container-fluid search-container" id="result_div">
             </div>
            
             <div class="container-fluid" style="width: auto;
@@ -872,10 +991,17 @@ function do_search()
             background-position: center;
             background-repeat: no-repeat;
             background-color: #2f6cbf;">
-
-                <div class="container-fluid sectionav">
-                    <button class="add-button"> Add to Desktop</button>
+            
+                <div class="container-fluid">
+                <br>
+                <br>
+                    <button class="container-fluid add-button"> Add to Desktop</button>
+                    
                 </div>
+                <br>
+                <br>
+                
+                
                 
                     
                     
@@ -886,24 +1012,13 @@ function do_search()
             
         </div>
 
+        
+            </div>
+
         <br>
         <br>
 
-        <form class="form-inline">
-                        <div class="input-group" style="width:100%">
-                            <div id="wrapper">
-
-                                <div id="search_box">
-                                    <form method="post" action="module_home" onsubmit="return do_search();">
-                                    <input type="text" id="search_term" name="search_term" placeholder="Enter Search" onkeyup="do_search();">
-                                   
-                                    </form>
-                                <div id="result_div"></div>
-                            </div>
-                        </div>
-
-                        </div>
-                    </form>
+       
 
             <div class="container-fluid section" id="dedication">
 
@@ -1089,6 +1204,7 @@ function do_search()
                     </div>
                     </p>
                 </div>
+
                 <?php
                                 $module_id = $_REQUEST['id'];
                                 $sql = "SELECT * FROM edit_modules ORDER BY module_id;";
