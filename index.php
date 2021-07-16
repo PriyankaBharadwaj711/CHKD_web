@@ -370,13 +370,14 @@ function do_search()
     #result_div
 {
  width:100%; 
- margin-top: 10px;
- margin-left: 15px;
+ height:400px;
+ margin-top: 100px;
+ /* margin-left: 10px; */
  font-size:12px;
  background-color:white;
  color:white;
  border:none;
- overflow: auto;
+ overflow: scroll;
  position: fixed;
 }
 #result_div li
@@ -973,7 +974,7 @@ body {
             </button>
     
 
-            <div class="search-container">
+                <div class="search-container">
                     <form method="post" action="module_home" onsubmit="return do_search();">
                         <input type="text" placeholder="Search.." name="search" id="search_term"  onkeyup="do_search();">
                     <!-- <button type="submit">Submit</button> -->
@@ -1010,10 +1011,10 @@ body {
                
             </div>
             
-        </div>
+        
 
         
-            </div>
+    
 
         <br>
         <br>
