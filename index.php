@@ -54,6 +54,7 @@ $id = $_REQUEST['id'];
             let openAgain = false;
 
             $("#myForm").hide();
+            $("#result_div").hide();
             // Add smooth scrolling to all links in navbar 
             $(".ul li a").on('click', function (event) {
                 // Make sure this.hash has a value before overriding default behavior
@@ -111,6 +112,7 @@ $id = $_REQUEST['id'];
                 $("#result_div").show();
                 
               });
+
               $("#mainContent").not("#result_div").click(function(e) {
                 console.log("inside maincontent");  
                 if(!loginOpened)
@@ -346,6 +348,19 @@ function do_search()
     text-align: justify;
 }
 
+.add-button {
+    position: absolute;
+    top: 120px;
+    right: 2px;
+    /* color: cadetblue; */
+    color: whitesmoke;
+    z-index: 4;
+    border-radius: 17px;
+    margin: 10px;
+    background-color: #121315;
+    border-color: #f5f5f5;
+}
+
 #search_box input[type="text"]
 {
  /* border: 1px solid grey; */
@@ -370,7 +385,8 @@ function do_search()
     #result_div
 {
  width:100%; 
- height:400px;
+ height:auto;
+ max-height : 400px;
  margin-top: 100px;
  /* margin-left: 10px; */
  font-size:12px;
