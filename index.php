@@ -2472,10 +2472,10 @@ body {
                         </p>
                         <p>* If age 15 years or older, or if &lt; 15 years with positive family history of thrombosis<br />* Remobilization: progressive return to semi/upright positioning to avoid orthostatic symptoms due to CV deconditioning and impaired autonomic responses; accomplished by use of reverse Trendelenburg, HOB elevation, chair sitting - twice daily, 20-30 minutes<br />** Autonomic dysreflexia: Triggered by distended bladder, constipation, skin lesion, positioning. Symptoms BP, bradycardia, hypertension, pounding headache, flushing/sweating, chills, visual changes, nasal congestion. Relieve cause; elevate HOB 90 degrees, place legs in dependent position a Start Colace as soon as able to take clear liquids. Plan for daily evacuation at same time every day; upright positioning. When taking diet, begin fiber, senna and bisacodyl suppository as appropriate. Use manual stimulation as needed with suppository.</p>
                         <div class="imgDimensions">
-                            <img src='./images/topic4_10_3.PNG'>
+                            <img src='./images/topic4_10_3.png'>
                         </div>
                         <div class="imgDimensions">
-                            <img src='./images/topic4_10_2.PNG'>
+                            <img src='./images/topic4_10_2.png'>
                         </div>
                     </div>
                     <div class="container-fluid section" id="topic4_11">
@@ -2483,10 +2483,10 @@ body {
                         <h2>Cervical Collar Sizing Guide</h2>
                         </p>
                         <div class="imgDimensions">
-                            <img src='./images/topic4_11.PNG'>
+                            <img src='./images/topic4_11.png'>
                         </div>
                         <div class="imgDimensions">
-                            <img src='./images/topic4_11_1.PNG'>
+                            <img src='./images/topic4_11_1.png'>
                         </div>
                     </div>
                     <div class="container-fluid section" id="topic4_12">
@@ -3176,8 +3176,8 @@ body {
                     <h2>Pediatric Peripheral Vascular Trauma</h2>
                     </p>
                     <div class="imgDimensions">
-                        <img src='./images/1.PNG'>
-                        <img src='./images/2.PNG' style="margin-left: 9.3px;">
+                        <img src='./images/1.png'>
+                        <img src='./images/2.png' style="margin-left: 9.3px;">
                     </div>
                 </div>
                 <div class="container-fluid section" id="topic7_2">
@@ -3185,7 +3185,7 @@ body {
                     <h2>Extremity compartment syndrome</h2>
                     </p>
                     <div class="imgDimensions">
-                        <img src='./images/3.PNG'>
+                        <img src='./images/3.png'>
                     </div>
                 </div>
                 <div class="container-fluid section" id="topic7_3">
