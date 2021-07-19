@@ -2429,10 +2429,10 @@ body {
                         <h2>Mild Head Injury (GCS 14-15) (CT Normal)</h2>
                         </p>
                         <div class="imgDimensions">
-                            <img src='./images/topic4_5.PNG'>
+                            <img src='./images/topic4_5.png'>
                         </div>
                         <div class="imgDimensions">
-                            <img src='./images/topic4_5_1.PNG'>
+                            <img src='./images/topic4_5_1.png'>
                         </div>
                     </div>
                     <div class="container-fluid section" id="topic4_6">
@@ -2440,7 +2440,7 @@ body {
                         <h2>Headache and Persistent Vomiting* after Mild Closed HeadTrauma (GCS ≥ 14)</h2>
                         </p>
                         <div class="imgDimensions">
-                            <img src='./images/topic4_6.PNG'>
+                            <img src='./images/topic4_6.png'>
                         </div>
                     </div>
                     <div class="container-fluid section" id="topic4_7">
@@ -2448,7 +2448,7 @@ body {
                         <h2>Algorithm for Cervical Spine Clearance</h2>
                         </p>
                         <div class="imgDimensions">
-                            <img src='./images/topic4_7.PNG'>
+                            <img src='./images/topic4_7.png'>
                         </div>
                     </div>
                     <div class="container-fluid section" id="topic4_8">
@@ -3275,25 +3275,25 @@ body {
                     <h2>Organ Grading Scale</h2>
                     </p>
                     <div class="imgDimensions">
-                        <img src='./images/4.PNG'>
+                        <img src='./images/4.png'>
                     </div>
                     <div class="imgDimensions">
-                        <img src='./images/5.PNG'>
+                        <img src='./images/5.png'>
                     </div>
                     <div class="imgDimensions">
-                        <img src='./images/6.PNG'>
+                        <img src='./images/6.png'>
                     </div>
                     <div class="imgDimensions">
-                        <img src='./images/7.PNG'>
+                        <img src='./images/7.png'>
                     </div>
                     <div class="imgDimensions">
-                        <img src='./images/8.PNG'>
+                        <img src='./images/8.png'>
                     </div>
                     <div class="imgDimensions">
-                        <img src='./images/9.PNG'>
+                        <img src='./images/9.png'>
                     </div>
                     <div class="imgDimensions">
-                        <img src='./images/10.PNG'>
+                        <img src='./images/10.png'>
                     </div>
                 </div>
                 <div class="container-fluid section" id="Burns">
