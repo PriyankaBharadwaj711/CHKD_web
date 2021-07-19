@@ -364,7 +364,7 @@ function do_search()
 #search_box input[type="text"]
 {
  /* border: 1px solid grey; */
- border-radius: 5px;
+ border-radius: 12px;
  /* height: 40px;
  width: 480px; */
  /* margin-left : 10px; */
@@ -1139,7 +1139,7 @@ body {
                 </div>
                 <div class="container-fluid section" id="traumaOrgChart">
                     <h2>Trauma Organizational Chart</h2>
-                    <div style="text-align: center;"><img src="./images/orgchart.png" alt="Trauma Org Chart" width="800"
+                    <div style="text-align: center;"><img src="./images/orgchart_1.png" alt="Trauma Org Chart" width="800"
                             height="800"></div>
                 </div>
                 <div class="container-fluid section" id="Consultant">
@@ -1191,7 +1191,7 @@ body {
                 <div class="container-fluid section" id="surgeryTraumaEmergency">
                     <p>
                     <h2>Phone Numbers - Surgery/Trauma/Emergency Medicine</h2>
-                    <div>
+                    <!-- <div>
                         <table class="table">
                             <thead>
                                 <tr>
@@ -1228,7 +1228,11 @@ body {
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
+                    </div> -->
+                    <div style="text-align: center;"><img src="./images/introduction_1.png" alt="Trauma Org Chart" width="800"
+                        height="800"></div>
+                    <div style="text-align: center;"><img src="./images/introduction_2.jpg" alt="Trauma Org Chart" width="800"
+                        height="800"></div>
                     </p>
                 </div>
                 <div class="container-fluid section" id="traumaActivations">
@@ -1239,7 +1243,7 @@ body {
                 <div class="container-fluid section" id="topic2_1">
                     <p>
                     <h2>CHKD Trauma Triage Criteria</h2>
-                    <table class="table">
+                    <!-- <table class="table">
                         <thead>
                             <tr>
                                 <th scope="col">Level I</th>
@@ -1397,7 +1401,9 @@ body {
 
 
                         </tbody>
-                    </table>
+                    </table> -->
+                    <div style="text-align: center;"><img src="./images/activations_1.jpg" alt="Trauma Org Chart" width="800"
+                            height="800"></div>
                     </p>
                 </div>
                 <div class="container-fluid section" id="topic2_2">
@@ -1447,8 +1453,7 @@ body {
                                             <p>Trauma Service will complete a tertiary survey for all trauma patients
                                                 within:</p>
                                             <p>- 24 hours once admitted to the general care units<br /> - 72 hours once
-                                                admitted to the PICU and repeat when</p>
-                                            <p>sedation is weaned</p>
+                                                admitted to the PICU and repeat when sedation is weaned</p>
                                         </li>
                                     </ul>
                                 </div>
@@ -1458,8 +1463,7 @@ body {
                 </div>
                 <div class="container-fluid section" id="topic2_3">
                     <p>
-                    <h2>Trauma Registration Protocol-
-                        Patient Access Technician Emergency Department</h2>
+                    <h2>Trauma Registration Protocol- ED</h2>
                     </p>
                     <div class="page" title="Page 17">
                         <div class="section">
@@ -1631,9 +1635,9 @@ body {
                                         Approximate time of injury</p>
                                     <p>8. Initial vital signs/current vital signs<br /> 9. Method of
                                         immobilization<br /> 10. IV access and fluid status<br /> 11. Administration of
-                                        blood or blood products 12. Medications administered</p>
+                                        blood or blood products<br /> 12. Medications administered</p>
                                     <p>13. Results of lab/radiology studies<br /> 14. Allergies and significant medical
-                                        history 15. Referring MD name and phone number</p>
+                                        history<br /> 15. Referring MD name and phone number</p>
                                     <p>The Trauma Surgeon/ED Attending should:</p>
                                     <p>1. Assist the referring physician in establishing safe and appropriate means of
                                         transportation.</p>
@@ -1721,29 +1725,51 @@ body {
                 </div>
                 <div class="container-fluid section" id="topic2_14">
                     <p>
-                    <h2>Special Consideration: Transporting Adult and Pediatric Trauma Patients</h2>
+                    <h2>SNGH and CHKD Trauma Directors have agreed to the following protocol for situations which involve both adult and pediatric patients who are related, most likely a child/parent relationship</h2>
                     </p>
                     <div>
                             <p>In the event a patient arrives to the CHKD emergency department via private vehicle/walk-in, the
                             following process will occur:</p>
                             <ol>
                                 <li>
-                                    Patient will be immediately placed in a trauma resuscitation room.
+                                    Initial field triage performed by EMS
+                                    <ul>
+                                        <li> Both adult and child are determined to be trauma patients </li>
+                                        <ul>
+                                            <li>Transport of adult to SNGH Trauma Center</li>
+                                            <li>Transport of child to CHKD Trauma Center</li>
+                                            <li>Requires separate transportation/ambulance</li>
+                                        </ul>
+
+                                    </ul>
+                                    <ul>
+                                        <li> Criteria as serious trauma patient, but may have some injuries and requests to remain with their child; </li>
+                                        <ul>
+                                            <li>Transport child to CHKD Trauma Center</li>
+                                            <li>Transport adult, with the child, to CHKD for assessment as any adult who may present to the ED</li>
+                                        </ul>
+                                    </ul>
+                                    <ul>
+                                        <li> Adult/parent is determined to be trauma patient but child does not meet criteria as serious trauma patient;</li>
+                                        <ul>
+                                            <li>Transport adult to SNGH Trauma Center.</li>
+                                            <li>Transport child, with adult, to SNGH for assessment.</li>
+                                        </ul>
+                                    </ul>
+                                    <ul>
+                                        <li> Both adult and child are determined to be trauma patients, but neither are serious AND unable or unwilling to be separated. </li>
+                                        <ul>
+                                            <li>Transport adult and child to either SNGH or CHKD based on which patient has more serious injuries</li>
+                                        </ul>
+                                    </ul>
                                 </li>
                                 <li>
-                                    The ED Attending and ED Charge RN will be notified.
-                                </li>
-                                <li>
-                                    ED Attending assigns the trauma level and notifies Patient Access Tech/Assignee of
-                                    patient arrival.
-                                </li>
-                                <li>
-                                    Patient Access Tech/Assignee will call the hospital operator to place the overhead
-                                    trauma announcement and also send a trauma page alert to the trauma team.
-                                </li>
-                                <li>
-                                    Patient Access Tech/Assignee registers the patient utilizing appropriate trauma number
-                                    designation.
+                                    Secondary triage at hospital.
+                                    <ul>
+                                        <li>Adult patient who presents to CHKD and is assessed to be a trauma patient or needing inpatient treatment, will be transferred to SNGH.</li>
+                                        <li>Pediatric patient who presents to SNGH and is assessed to be a trauma patient or needing inpatient treatment, will be transferred to CHKD.</li>
+                                        <li>In both situations, the transfer centers of each institution will be utilized to facilitate an efficient and expedited transfer from ED to ED.</li>
+                                    </ul>
                                 </li>
                             </ol>
                     </div>
@@ -1790,7 +1816,7 @@ body {
                     <h2>Trauma/Medical Resuscitation Pre-Arrival Checklist
                     </h2>
                     </p>
-                    <div class="imgDimensions"><img src="./images/prechecklist.png" alt="Pre arrival Checklist"
+                    <div class="imgDimensions"><img src="./images/prechecklist_1.png" alt="Pre arrival Checklist"
                             width="800" height="800"></div>
                 </div>
                 <div class="container-fluid section" id="topic2_9">
@@ -1798,12 +1824,12 @@ body {
                     <h2>Pre-Arrival/Debrief Documentation
                     </h2>
                     </p>
-                    <div class="imgDimensions"><img src="./images/prearrival.png" alt="Pre arrival Checklist"
+                    <div class="imgDimensions"><img src="./images/prearrival_1.png" alt="Pre arrival Checklist"
                             width="800" height="800"></div>
                 </div>
                 <div class="container-fluid section" id="topic2_10">
                     <p>
-                    <h2>Trauma Team Positioning
+                    <h2>CHKD Trauma Team Positioning
                     </h2>
                     </p>
                     <div class="imgDimensions"> <img src="./images/traumaTeam.png" alt="Girl in a jacket" width="800"
@@ -3074,6 +3100,72 @@ body {
                     <p>No routine follow-up imaging is required.</p>
                 </div>
 
+                <p><strong>Pancreatic Injury</strong></p>
+                <p>The pancreas is the 4th most commonly injured abdominal solid organ but pancreatic injury represents only 0.3% of all pediatric trauma and 0.6% of significant abdominal trauma. Mortality rate for pancreatic trauma is about 5% and major complications to include ARDS, wound infection, pneumonia and sepsis affects 1 in 4 children with pancreatic trauma. The American Association for Surgery in Trauma has the following grading scale for pancreatic trauma:</p>
+                <div class="imgDimensions">
+                            <img src="./images/blunt_5.jpg" alt="burns chart" width="800" height="800">
+                    </div>
+                    <div class="imgDimensions">
+                            <img src="./images/blunt_6.jpg" alt="burns chart" width="800" height="800">
+                    </div>
+                <p>According to the National Trauma Bank Database, injuries are evenly divided between the head, body, and tail. The management of pancreatic trauma remains controversial in the pediatric population and there is no consensus regarding operative vs. non-operative management.</p>
+                <p>Non operative management increases risk of pseudocyst formation. Main duct injury increases the risk of pseudocyst formation. Ductal anatomy can be defined with ERCP/MRCP. There is no data to show that stenting helps relieve back pressure or promotes drainage. The Pediatric Trauma Society has created a proposed algorithm stating nonoperative management is acceptable for most pediatric patients including grade IV and V proximal injuries. This is based on evidence that observing most injuries has few adverse consequences and symptomatic pseudocysts that developed after injury could be percutaneously drained or they resolved spontaneously without intervention. Operative options for Grade IV and V proximal injuries are morbid and have adverse long term consequences therefore non-operative management is preferred. Grade III, however, is still controversial. The flow diagram from the Pediatric Trauma Society featured on the next page is to assist decisions made for patients with pancreatic injuries.</p>
+                <div class="imgDimensions">
+                            <img src="./images/blunt_4.jpg" alt="burns chart" width="800" height="800">
+                    </div>
+                <div>
+                    <h2><strong>Renal Trauma</strong></h2>
+                <div>
+                <p>Ten percent of patients with blunt abdominal trauma are found to have a urogenital injury. Renal parenchymal injuries are the most common. Of these injuries 75-90% may be classified as minor (Grade I-III) and require no intervention.</p>
+                <p><strong>Evaluation:</strong></p>
+                <p>Urine from the first post injury void should be evaluated on all patients with blunt abdominal trauma. Most patients with major renal trauma present with gross hematuria or hypotension, only 0.8 - 1.2% of major renal injuries have neither.</p>
+                <p>Microscopic hematuria (Greater than 5 RBC/HPF): Rarely associated with significant renal system injury. Patients require observation and repeat UA later in the ER or hospital to demonstrate resolution, in order to rule out other sources of hematuria such as malignancy. Children with significant microscopic hematuria (Greater than 50 RBC/HPF) should undergo abdominal/pelvic CT with cystogram as their risk for significant renal injury is higher than in adults.</p>
+                <p>Gross hematuria: Patients require abdominal/pelvic CT with cystogram if hemo-dynamically stable. A retrograde urethrogram should be performed if there is blood at the meatus.</p>
+                <p>Blunt vs. penetrating: Blunt injury and stab wounds may be worked up in a similar fashion. Gunshot injuries often skip CT scan staging and require exploration because of hypotension, massive injury and delayed complications secondary to blast effect.</p>
+                <div class="imgDimensions">
+                            <img src="./images/blunt_8.jpg" alt="burns chart" width="800" height="800">
+                    </div>
+                <p><strong>Management:</strong></p>
+                <p>Patients with a major renal injury may be candidates for nonoperative management under these conditions: Stable hemodynamics, urine extravasation contained within Gerota's fascia, and no ongoing bleeding. Patients should be monitored for the first 24–48 hrs. Bed rest should continue for 24 hours after the cessation of hematuria.</p>
+                <p>Other therapeutic interventions includ</p>
+                <p>Angio-embolization: A two-unit transfusion limit (blood loss thought to be related to renal injury) will be set as a threshold to consider angiogram for embolization. Bleeding may manifest as expanding hematoma or persistent hematuria.</p>
+                <p>Double J Stent: Patients with evidence of urinary extravasation on initial CT scan may warrant stenting. Plan re-evaluation with CT scan 48 hours post injury. Any patient with persistent urinary extravasation on repeat CT scan requires stenting. Less than 10% of patients require surgery for failure of stents to control urine extravasation.</p>
+                <p>Percutaneous drainage: Urinoma and abscess may be a complication of non-operative management. Both may be treated with percutaneous drainage.</p>
+                <p>Operative salvage: Patients taken to the operating room for hypotension before adequate staging of potential renal injuries may warrant exploration if there is a strong suspicion for renal injury. Otherwise, postoperative staging CT is recommended. Intra-op IVP has been used to assess contralateral kidney function yet less than 1% of patients with a palpable contralateral kidney have a non-functioning kidney. The “one-shot IVP” is not warranted.</p>
+                <p>Intra-op considerations: Assess urinary extravasation by injection of methylene blue. Goals are debridement, homeostasis, watertight closure of the collecting system, reapproximation of the parenchyma, and drainage of the retroperitoneum. Often omentum is used to wrap the kidney after repair.</p>
+                <p>Revascularization: Revascularization has been employed for traumatic renal artery occlusion. Salvage in this situation is rarely successful and should not be undertaken in the acutely injured patient. Fewer complications are seen if non-operative management is undertaken. However, the patient must be monitored for the development of renovascular hypertension.</p>
+                <div>
+                            <h2>Blunt Bowel & Mesenteric Injury</h2>
+                <div>
+                <p>Blunt injury to the bowel or mesentery (BBMl) is uncommon and can be difficult to diagnose.</p>
+                <p>CT scanning is the best noninvasive test for diagnosing BBMl. Oral contrast does not need to be routinely administered as it delays the evaluation and does not add to the specificity or sensitivity of the test. CT findings that suggest BBMI include free fluid in the absence of solid organ injury, bowel wall thickening, mesenteric fat streaking, mesenteric hematoma, pneumoperitoneum and extravasation of IV or oral contrast.</p>
+                <p>The findings of pneumoperitoneum or constrast extravasation mandate laparotomy. The other findings are suggestive but not specific for BBMI. Two or more of the above findings mandate laparotomy. A single finding should prompt further evaluation.</p>
+                <p>Options for further evaluation include serial physical exams or repeat CT scan. Physical exam has been shown to have variable results in predicting a need for operation. Thus it should be supplemented by serial WBC and a delayed CT scan.</p>
+                <p>A low threshold for exploration should be used when the clinical picture is not improving.</p>
+                <div class="imgDimensions">
+                            <img src="./images/blunt_9.jpg" alt="burns chart" width="800" height="800">
+                    </div>
+                <div class="imgDimensions">
+                            <img src="./images/blunt_1.jpg" alt="burns chart" width="800" height="800">
+                    </div> 
+                <div>
+                    <h2>Rectal Injury</h2>  
+                </div>
+                <p>Rectal injuries should be classified as either intraperitoneal or extraperitoneal. Injuries to the anterior and lateral surfaces of the upper two-thirds of the rectum are classified as intraperitoneal (serosalized), and those of the posterior surface as extraperitoneal (no serosa). Injuries to the lower one-third are extraperitoneal. Rectal injury needs to be ruled out in all transpelvic gunshot wounds and other penetrating pelvic injuries. Diagnostic modalities should include a digital rectal exam looking for gross blood, and a proctosigmoidoscopy.</p>          
+                <p>Intraperitoneal rectal injuries should be primarily repaired with or without fecal diversion. Easily visualized injuries with minimal dissection should be primarily repaired. Fecal diversion can be undertaken if injury is more complex or difficult to visualize.</p>           
+                <p>Distal rectal washout and presacral drainage, mainstay therapy for high-velocity rectal injuries, has not shown any advantage in the management of civilian type rectal injuries and may be omitted. Broad-spectrum antibiotics covering gram negative bacteria and anaerobes should be given. Finally, genitourinary tract injuries are among the most common injuries associated with rectal trauma. Hematuria should raise the level of suspicion and prompt further workup.</p>
+                <p>Healing of rectal wounds may occur in up to 75% of patients 10 days after injury. Same admission colostomy closure may be considered in patients with low grade or penetrating injuries. Healing should be demonstrated with a contrast enema to exclude stricture or fistula formation.</p>
+                <div>
+                            <h2>Unstable Pelvic Fractures</h2>
+                </div>
+                <p>Hemodynamically compromised patients with pelvic fractures present a complex challenge to trauma surgeons.</p>
+                <p>Hemodynamically stable patients should undergo CT scanning of the abdomen and pelvis to detect occult injuries or contrast extravasation. The finding of contrast extravasation in the pelvis is highly suggestive of significant arterial bleeding that may require angiography and embolization. Ongoing transfusion requirements also constitute an indication for arteriography.</p>
+                <p>The initial approach to hemodynamically compromised patients must be aggressive. Crystalloid resuscitation and transfusion of packed red blood cells should be instituted immediately: empiric administration of fresh frozen plasma (I: I) and platelets (5:5) may help prevent coagulopathy. Reduction of the pelvic volume is critical, and is achieved by prompt wrapping of the pelvis, and taping of the knees and ankles. The orthopedic surgery attending is instrumental in determining whether application of an external fixation device and what device is appropriate.</p>
+                <p>Identification of alternative sites of bleeding is central to the triage of these patients. Physical examination, chest x-ray, and ultrasonography will identify significant extrapelvic hemorrhage, allowing timely intervention. If ultrasonography is equivocal, supraumbilical DPL should be performed, and the patient taken to the OR if the aspirate is grossly positive.</p>
+                <p>Patients who do not recover with mechanical pelvic stabilization, transfusion, and treatment of associated injuries have a high likelihood of harboring pelvic arterial hemorrhage. They should undergo prompt arteriography either in the operating room or the radiography suite. For this reason, vascular/interventional radiology should be alerted early in the course of these patients.</p>
+                <div class="imgDimensions">
+                            <img src="./images/blunt.jpg" alt="burns chart" width="800" height="800">
+                    </div> 
                 <div class="container-fluid section" id="otherIssues">
                     <p>
                     <h1 class="h1purple">Other Issues</h2>
@@ -3159,7 +3251,7 @@ body {
                         </tbody>
                     </table>
                 </div>
-                <!-- <div class="container-fluid section" id="topic7_5">
+                <div class="container-fluid section" id="topic7_5">
                     <p>
                     <h2>Injury Severity Scoring</h2>
                     </p>
@@ -3177,7 +3269,7 @@ body {
                         accuracy in predicting death. We currently collect AIS/ISS/NISS. For
                         more information on these scoring systems, access the trauma library
                         under Trauma Scoring Systems for more resources.</p>
-                </div> -->
+                </div>
                 <div class="container-fluid section" id="topic7_6">
                     <p>
                     <h2>Organ Grading Scale</h2>
@@ -3470,7 +3562,7 @@ body {
                                 width="800" height="800"></div>
                     </div>
                 </div>
-                <!-- <div class="container-fluid section" id="topic8_6">
+                <div class="container-fluid section" id="topic8_6">
                     <h2>Burn Care Guidelines</h2>
                     <ol><b>
                     <li><u>Burns ≤5% TBSA</u></li>
@@ -3640,7 +3732,7 @@ body {
                         </li>
 
                     </ul>
-                </div> -->
+                </div>
 
                 <div>
 
