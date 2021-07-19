@@ -2494,7 +2494,7 @@ body {
                         <h2>Standard Neurological Classification of Spinal Cord Injury</h2>
                         </p>
                         <div class="imgDimensions">
-                            <img src='./images/topic4_12.PNG'>
+                            <img src='./images/topic4_12.png'>
                         </div>
                     </div>
                 <div class="container-fluid section" id="penetratingTrauma">
