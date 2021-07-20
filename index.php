@@ -1572,6 +1572,9 @@ body {
                                                     medical record may occur after 72 hrs.</p>
                                             </li>
                                         </ol>
+                                        <p> *Note: Patient name change cannot occur within the first 72 hrs of a trauma patient presenting to the
+                                            ED. The legal name can be placed in the other name field upon verification for those initially deemed
+                                            “unidentified.” A merge of the medical record may occur after 72 hrs.</p>
                                     </div>
                                 </div>
                                 <div class="layoutArea">&nbsp;</div>
@@ -1725,8 +1728,9 @@ body {
                 </div>
                 <div class="container-fluid section" id="topic2_14">
                     <p>
-                    <h2>SNGH and CHKD Trauma Directors have agreed to the following protocol for situations which involve both adult and pediatric patients who are related, most likely a child/parent relationship</h2>
+                    <h2>Special Consideration: Transporting Adult and PediatricTrauma Patients</h2>
                     </p>
+                    <p>SNGH and CHKD Trauma Directors have agreed to the following protocol for situations which involve both adult and pediatric patients who are related, most likely a child/parent relationship</p>
                     <div>
                             <p>In the event a patient arrives to the CHKD emergency department via private vehicle/walk-in, the
                             following process will occur:</p>
@@ -1808,7 +1812,7 @@ body {
                     <h2>Trauma Team Activation Process
                     </h2>
                     </p>
-                    <div class="imgDimensions"><img src="./images/activ_process.png" alt="activ_processt" width="800"
+                    <div class="imgDimensions"><img src="./images/activ_process_1.png" alt="activ_processt" width="800"
                             height="800"></div>
                 </div>
                 <div class="container-fluid section" id="topic2_8">
